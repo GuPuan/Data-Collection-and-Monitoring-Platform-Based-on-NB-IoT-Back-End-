@@ -1,0 +1,24 @@
+server:
+  port: 9090  # The server will run on port 9090
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver  # JDBC driver for MySQL
+      url: // Confidential Content  # The URL for the database connection (hidden for confidentiality)
+      username: // Confidential Content  # Database username (hidden for confidentiality)
+      password:  // Confidential Content  # Database password (hidden for confidentiality)
+      initial-size: 10  # The initial number of connections in the connection pool
+      max-active: 100  # The maximum number of active connections that can be allocated from the pool
+      min-idle: 10  # The minimum number of idle connections that can be maintained in the pool
+      max-wait: 6000  # The maximum wait time (in milliseconds) for getting a connection from the pool
+      pool-prepared-statements: true  # Whether to pool prepared statements for reuse
+      test-while-idle: true  # Whether to test idle connections for validity
+
+  jackson:
+    time-zone: GMT+8  # Set the time zone to GMT+8 (China Standard Time)
+    date-format: yyyy-MM-dd HH:mm:ss  # Specify the default date format for JSON serialization
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # Configure MyBatis to use standard output logging (logs SQL queries to the console)
