@@ -22,8 +22,3 @@ The back-end of this IoT data collection and monitoring platform is developed us
 - Java 8 or higher
 - Maven 3.6+
 - MySQL 5.7 or higher
-
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone <repository_url>
